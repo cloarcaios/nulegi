@@ -1,0 +1,79 @@
+.txt-grey {
+  color: #828282;
+}
+.bg-grey {
+  background: #828282;
+}
+.txt-green {
+  color: #6cc24a;
+}
+.bg-green {
+  background: #6cc24a;
+}
+.txt-cian {
+  color: #4fb0ff;
+}
+.bg-cian {
+  background: #4fb0ff;
+}
+.txt-blue {
+  color: #283c90;
+}
+.bg-blue {
+  background: #043245;
+}
+.txt-pink {
+  color: #ea088d;
+}
+.bg-pink {
+  background: #ea088d;
+}
+.txt-orange {
+  color: #ff9d00;
+}
+.bg-orange {
+  background: #ff9d00;
+}
+.txt-black {
+  background: #000000;
+}
+.bg-black {
+  background: #000000;
+}
+.txt-white {
+  color: #ffffff;
+}
+.bg-white {
+  background: #ffffff;
+}
+.title-content {
+  font-size: 2.5vw;
+  font-weight: bold;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .title-content {
+    font-size: 8vw;
+  }
+}
+@media (max-width: 768px) and (orientation: landscape) {
+  .title-content {
+    font-size: 4vw;
+  }
+}
+.subtitle {
+  font-weight: bold;
+  font-size: 1.5vw;
+  width: 100%;
+  float: left;
+}
+@media (max-width: 768px) {
+  .subtitle {
+    font-size: 6vw;
+  }
+}
+@media (max-width: 768px) and (orientation: landscape) {
+  .subtitle {
+    font-size: 3vw;
+  }
+}

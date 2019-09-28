@@ -1,0 +1,30 @@
+/* ============================================================
+  SECTIONS
+============================================================ */
+section.module:last-child {
+  margin-bottom: 0;
+}
+
+section.module.content {
+  padding: 40px 0;
+}
+section.module.parallax {
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+section.module.parallax-1 {
+  background-image: url("../images/banner.png");
+  position: relative;
+  height: 100vh;
+}
+section.module.parallax-2 {
+  background: #f2f2f2;
+    }
+section.module.parallax-3 {
+  background-image: url("../images/3.jpg");
+}

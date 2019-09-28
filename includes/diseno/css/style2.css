@@ -1,0 +1,1045 @@
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/OpenSans-Regular-webfont.eot');
+    src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('../fonts/OpenSans-Bold-webfont.eot');
+    src: url('../fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Bold-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.submenu {
+    display: inline-block;
+    height: calc(100% - 200px);
+    overflow: auto;
+}
+
+.submenu::-webkit-scrollbar, .content-wrap::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+.submenu::-webkit-scrollbar-track, .content-wrap::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+.submenu::-webkit-scrollbar-thumb, .content-wrap::-webkit-scrollbar-thumb {
+  background-color: rgba(128, 128, 128, 0.62);
+}
+
+.contract-btn {
+    width: calc(100% - 65px);
+    display: inline;
+}
+
+.button-blue {
+    background: #18bdca !important;
+    border-color: #18bdca;
+}
+.content-wrap {
+    background: url(../images/bg_fondo.png);
+    height: 100%;
+    position: absolute;
+    width: calc(100% - 300px);
+    margin-left: 300px;
+    overflow: auto;
+    padding: 20px 50px;
+        background-repeat: no-repeat;
+    background-size: cover;
+}
+
+*{
+  font-family: 'open_sansregular';
+}
+
+.intoName{
+  font-family: "open_sansregular";
+  font-size: 20px;
+  color: black;
+}
+
+input:focus, select:focus{
+  outline: none;
+}
+
+.checker span{
+  width: 15px !important;
+  height: 15px !important;
+  background-image: url(../images/check.png) !important;
+  background-size: 15px !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.checker span.checked{
+  width: 15px !important;
+  height: 15px !important;
+  background-image: url(../images/checked.png) !important;
+  background-size: 15px !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.check{
+  margin-right: 10px;
+}
+.TopMenu{
+  width: 100%;
+  float: left;
+  height: 100px;
+  background: white;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.menuRight{
+  width: 77%;
+  float: left;
+  height: 100%;
+  position: relative;
+}
+
+.rightAllMenu {
+    width: 16.666666667%;
+        position: absolute;
+    height: 100%;
+}
+
+.rightAllMenu1 {
+  left: 0%;
+}
+
+.rightAllMenu2 {
+  left: 16.66666666%;
+}
+
+.rightAllMenu3 {
+  left: 33.33333333%;
+}
+
+.rightAllMenu4 {
+  left: 50.00000000%;
+}
+
+.rightAllMenu5 {
+  left: 66.66666667%;
+}
+
+.rightAllMenu6 {
+  left: 83.33333334%;
+}
+
+
+.paddingMenu {
+    text-align: center;
+    padding: 15px;
+    float: left;
+    min-height: 115px;
+    border-right: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    font-size: 15px;
+    color: #999999;
+}
+
+.paddingMenuTxt{
+  padding-top: 10px;
+}
+
+.paddingMenu div {
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+.sidebar{
+  background-color: #043245;
+  height: 99.6%;
+  width: 300px;
+  float: left;
+  position: absolute;
+}
+
+.sidebar a img {
+    margin-right: 10px;
+}
+.sidebar a p {
+    margin: 0;
+}
+.sidebar a {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 30px;
+    height: 50px;
+    border-bottom: 1px solid #0A252D;
+}
+
+.sidebar a p {
+    color: white;
+}
+
+.wrap {
+  background-repeat: repeat-x;
+  width: 100%;
+  padding: 15px;
+  position: relative;
+  float: left;
+  background: white;
+  box-shadow: 6px 6px 15px 0px rgba(128, 128, 128, 0.5);
+  margin-bottom: 15px;
+}
+.listOrder {
+    margin: 0 5px;
+}
+hr {
+  padding: 0 !important;
+}
+
+.titleSidebar{
+  color: white;
+  padding-top: 10px;
+    width: 100%;
+    float: left;
+  }   
+
+.sectionMenu {
+    background: white;
+    float: left;
+    height: 35%;    padding-top: 10px;
+}
+
+.arrow{
+width: 25px;
+    height: 12px;
+    background: url(../images/arrowToggle.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -20px;
+    left: 8px;
+
+}
+.toggle.togglePlus .arrow {
+    margin-bottom: -16px;
+}
+.navMenuBottom {
+    width: 100%;
+    height: 40px;
+    float: left;
+    position: absolute;
+    bottom: 10px;
+    left: 9px;
+    margin-bottom: 17px;
+    }
+
+.toggle.toggleBar li a {
+    color: black;
+}
+    .notario .subItem {
+    float: left;
+    width: 33.3%;
+}
+
+.iconSide {
+    width: 25%;
+    float: left;
+    height: 40px;
+    left: 0;
+    padding-top: 5%;
+    text-align: left;position: relative;
+}
+
+.toggle.toggleBar, .toggle.togglePlus, .toggle.toggleShare, .toggle.toggleTrash {
+    position: absolute;
+    bottom: 16%;
+    left: 0;
+    bottom: 95%;
+}
+.brand{
+  width: 100%;
+  position: relative;
+  height: 100%;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.itemMenu p {
+    margin: 0;
+}
+.itemMenu {
+    width: 100%;
+    height: auto;
+    float: left;
+    margin: 1% 0;
+}
+.subItem {
+    width: 20%;
+    float: left;
+    text-align: center;
+    font-size: 10px;
+    color: #29ABE2;
+    border-right: 1px solid black;
+    cursor: pointer;
+}
+.subItem a, .notario .subItem{
+      color: #29ABE2;
+}
+
+.subItem a:hover{
+      color: #ED404D;
+}
+
+.notario, .notario div, .notario div b{
+  color: #043245;
+}
+.notario div{
+  font-style: light;
+}
+
+.nameNotario {
+    font-size: 19px;
+
+}
+
+.nameNotarioList{
+      font-size: 16px;
+    font-style: normal;
+}
+.subItem:hover {
+  color:#ED404D;
+}
+
+.preview {
+    width: 100%;
+    height: auto;
+    height: 150px !important;
+    position: relative;
+    height: auto;
+    overflow: hidden;
+}
+
+.preview img{
+    height: 100%;
+    width: 100%;
+}
+span.iconContract {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -20px;
+    margin-left: -20px;
+}
+span.iconContract img{
+    width: 100%;
+}
+.contractPreview{
+    box-shadow: 2px 0px 11px 0px rgba(128, 128, 128, 0.5);
+    padding: 0;
+    width: 90%;
+    float: left;
+    margin-left: 5%;
+    background: white;
+}
+
+.nonePadding{
+  padding: 0; 
+}
+
+.marginLarge{
+    margin-top: 2%;
+}
+
+.contentDoc {
+    float: left;
+    padding: 15px 10px;
+    width: 100%;
+    height: auto;
+    color: #B3B3B3;
+}
+
+.contentScroll {
+    width: 100%;
+    float: left;
+}
+
+.contentScroll2{
+  width: 100%;
+  float: left;
+}
+
+
+.legendIcon {
+    min-height: 40px;
+    float: left;
+    width: 100%;
+}
+.owl-nav {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 50px;
+    margin-top: -25px;
+}
+.formContract {
+    padding: 10%;
+    border: 1px solid black;
+    margin: 4% 0;
+    float: left;
+}
+
+.error {
+    color: red;
+    display: inline-block;
+    font-size: 9px;
+    margin-left: 5px;
+    width: auto;
+}
+
+.generatorContract .formContract {
+    float: left;
+    height: 60vh;
+    width: 100%;
+    overflow: auto;
+}
+
+.button-generator {
+  padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.item1TC{
+  top: 0;
+}
+
+
+.formContract .titleGeneral {
+    text-align: center;
+    font-style:normal;
+}
+span.legendForm {
+    text-align: center;
+    width: 100%;
+    float: left;
+    color: #00BECD;
+    font-size: 13px;
+}
+input.fillButton.prev {
+    background: #B3B3B3;
+    border: 1px solid #B3B3B3;
+}
+
+.item1C{
+  top: 0;
+}
+
+.item2C{
+  bottom: 60%;
+}
+
+.item3C{
+  bottom: 30%;
+}
+
+.item4C{
+  bottom: 0;
+}
+
+.contentText {
+    float: left;
+    width: 174px;
+    margin-left: 34px;
+    height: 500px;
+    position: relative;
+}
+
+.owl-prev {
+    text-indent: -999px;
+    background: url(../images/arrowLeft.png);
+    background-repeat: no-repeat;
+    background-size:9px 19px;
+        width: 9px;
+    height: 19px;
+    float: left;
+}
+.owl-next {
+    text-indent: -10000px;
+    background: url(../images/arrowRight.png);
+    background-repeat: no-repeat;
+    background-size:9px 19px;
+        width: 9px;
+    height: 19px;
+    float: right;
+}
+
+.rowIcon{
+  margin-bottom:10px;
+  text-align: center; 
+}
+.sliderContract{
+    width: 90% !important;
+    position: relative;
+    float: left;
+    margin: 25px 5%;
+}
+select{
+  border: 2px solid #FF6666;
+  color: #c8c8c8;
+  background: rgba(255, 255, 255, 0);
+  margin-bottom: 10px;
+  width: 100%;
+  padding-left: 10px;
+  height: 35px;
+  -webkit-appearance: none;
+}
+
+input{
+    margin-bottom: 10px;
+    width: 100%;
+    padding-left: 10px;
+    height: 35px;
+}
+
+.titleGeneral {
+  margin: 0; 
+}
+.row-flex {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.row-flex img{
+    float: left;
+}
+
+.row-flex h3{
+    margin: 0 10px;
+    width: 200px;
+}
+
+.row-flex hr{
+    width: 70%;
+    margin: 0;
+    border: 1px solid #d8d8d8;
+}
+
+textarea {
+    resize: none;
+    min-height: 150px !important;
+}
+
+.toggle{
+  width: 162px;
+  height: 87px;
+  background: #41889E;
+    color: black;
+}
+
+.readMore {
+    float: left;
+}
+.toggle.toggleBar {
+height: 160px;
+}
+
+.togglePlus {
+    height: 80px;
+}
+.toggle li {
+    width: 100%;
+    padding: 5px;
+    color: black;
+    border-bottom: 1px solid black;
+    list-style: none;
+      background: #0088A0;float: left;
+
+}
+
+.lineTitle{
+
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar  {
+    background-color: #7E848A !important;
+}
+
+.mCSB_scrollTools .mCSB_draggerRail {
+    background-color: rgba(255, 255, 255, 0.4) !important;
+    border: 1px solid #ADADAD !important;
+    width: 5px !important;
+}
+
+a {
+    width: 100%;
+    float: left;
+    height: auto;
+}
+
+.iconOrder {
+  text-align: right;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 5px;
+}
+select:focus, select:active, input:hover, input:active, button:active, button:focus{
+  outline: none;
+}
+
+.colFile {
+    border-bottom: 1px solid black;
+    padding: 10px 0px;
+}
+
+.txtFile, .dateFile, .checkFile {
+    padding: 17px 0px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+}
+
+.newsPrincipal img{
+  width: 100%;
+}
+
+.contentDoc.txtNews, .contentDoc.txtNews div{
+    padding: 0px 10px 8px;
+    background: #B3B3B3;
+    color: white;
+}
+
+button.back i {
+    padding-right: 8px;
+}
+button.back {
+    background: rgba(128, 128, 128, 0);
+    border: none;
+    margin: 7px 0;
+}
+
+.imagePdf{
+  padding-right: 10px;
+}
+
+.buttonPdf {
+    color: white;
+    background: rgba(4, 50, 69, 0.81);
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    padding: 10px 26px;
+    border-radius: 0;
+}
+
+.menuPdf {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    margin-left: -33.33333337%;}
+
+.new-single img{
+  width: 100%;
+}
+
+.backLevel{
+  color:#7E848A;
+}
+
+b.level{
+  color: black;
+}
+*, a, a:hover{
+  color: #808080;
+}
+h4, h3 {
+    color: #043245;
+}
+
+.sidebar a.active {
+    background: rgba(23,189,203,0.43);
+}
+
+.flex-content {
+  /*height: calc(100% - 150px);*/
+  margin-top: 30px;
+  float: left;
+  width: 100%;
+}
+
+.submenu a {
+    height: 35px;
+    color: white;
+    padding-left: 35px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 5px;
+}
+.file-active {
+    background: #0A252D;
+}
+.submenu a:hover {
+  border: 1px solid rgba(23,189,203,0.43);
+  background: rgba(23,189,203,0.06);
+}
+
+.select-bg {
+    background-image: url(../images/down.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: auto 100% !important;
+    padding: 0 35px;
+    border: 2px solid #00BECD;
+    color: #808080;
+    background: rgba(255, 255, 255, 0);
+    width: 100%;
+    padding-left: 35px;
+    height: 35px;
+    -webkit-appearance: none;
+    text-align: left;
+    -moz-appearance: none;
+    -ms-appearance: none;
+}
+
+.row-cat button:focus {
+    border: 1px solid #17bdcb;
+}
+
+.row-cat button {
+  padding: 10px;
+  background: none;
+  border: none;
+  display: table-cell;
+  width: 20%;
+  vertical-align: text-top;
+  border: 1px solid rgba(23, 189, 203, 0);
+}
+
+.row-cat {
+  display: table-row;
+  height: 100px;
+}
+.toggle-category {
+    position: absolute;
+    z-index: 3;
+    background: white;
+    width: 500px;
+    height: 200px;
+    display: table;
+     border-spacing: 10px;
+    border-collapse: separate;
+}
+.row-cat button p {
+    margin: 0;
+    display: block;
+    width: 100%;
+    float: left;
+}
+
+.search-bg {
+    background: url(../images/search.png);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    padding: 0 35px;
+        border: 2px solid #00BECD;
+}
+
+.legend-Contract{
+      padding: 11px 33px;
+    text-align: center;
+    color: white;
+}
+#condition .modal-content, #previewContract .modal-content{
+  margin-top: -228px;
+}
+p.contentCondition {
+    width: 100%;
+    padding: 10px;
+    text-align: justify;
+    height: 400px;
+    font-size: 11px;
+    overflow: auto;
+  }
+a:hover, a:active, a:focus{
+  text-decoration: none;
+}
+
+.imageContractCreate {
+    display: block;
+    height: 300px;
+    margin: 15px auto;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.buttonLightbox.prevContract{
+  background: #17BDCB;
+}
+
+.infoNew, .infoNew div, .titleGeneral{
+  color: #043245;
+      font-style: normal;
+}
+
+
+#previewContract .modal-content{
+    width: 600px;
+    margin-left: -300px;
+}
+.bottomSingle{
+  margin-bottom: 30px;
+}
+.borrador{
+      width: 100%;
+    min-height: 300px;
+    border: 1px solid black;
+    margin: 0% 0 2%;
+    height: auto;
+    padding: 2%;
+    float: left;
+        text-align: justify;
+}
+
+input.fillButton {
+    background: #FF6666;
+    color: white;
+    text-align: center;
+}
+
+input.fillButton.tutorial {
+    border-radius: 0 !important;
+    text-align: left;
+    background-image:url(../images/arrowGo.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-color: #00BECD;
+    border-color: #00BECD;
+}
+
+input.submitHelp {
+    width: 100px;
+    float: right;
+    border-radius: 0 !important;
+    border: none;
+    background: #B3B3B3;
+    color: white;
+}
+
+.modal-body{
+  padding: 0 !important;
+}
+
+.modal-body p{
+  padding: 10px !important;
+}
+.modal-body img{
+  width: 100%;  
+}
+.modal-content{
+    float: left;
+    width: 450px;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    margin-top: -85px;
+    margin-left: -225px;
+    background: #043245;
+    color: white;
+    text-shadow: none;
+}
+
+input.email {
+    border-radius: 0;
+    border: none;
+    color: #CCCCCC;
+}
+input.buttonLightbox {
+    background: #022833;
+    border-radius: 0;
+    border: none;
+    color: white;
+}
+
+p.txtLightbox {
+padding: 16px 33px 0;
+    text-align: center;
+    color: white;
+}
+
+input.tabButton {
+    border: 1px solid #DDDDDD;
+    border-radius: 0px;
+        color: #808080;
+}
+.module1 p, .module2 p, .module3 p{
+    color: white;
+}
+.module1, .module2, .module3{
+    min-height: 50px;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    font-size: 28px;
+    width: 100%;
+}
+
+.subModule1, .subModule2, .subModule3{
+    min-height: 50px;
+    color: white;
+    text-align: center;
+    padding: 7px;
+    font-size: 21px;
+    width: 100%;
+}
+
+.subModule1{
+  background:#b8dce0; 
+}
+
+.subModule2{
+  background:#bddcdb; 
+}
+
+.subModule3{
+  background:#20789b; 
+}
+
+.module1{
+  background:#b9ebef; 
+}
+
+.module2{
+  background:#c3ebe6; 
+}
+.module3{
+  background:#2c97d3; 
+}
+
+.scrollDoc {
+    height: 94%;
+    float: left;
+    width: 100%;
+}
+
+.scrollDoc .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .scrollDoc .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: #043245 !important;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+    color: #FFF;
+    cursor: default;
+    background-color: #B3B3B3;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+}
+
+.nav-tabs>li>a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 4px 4px 0 0;
+}
+
+.tab-content {
+    width: 100%;
+    float: left;
+    padding: 25px 10px;
+    border-left: 1px solid #DDDDDD;
+    border-right: 1px solid #DDDDDD;
+}
+
+.modal-dialog{
+      width: 100%;
+    float: left;
+    height: 100%;
+    margin: 0;
+}
+button.close {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    color: white;
+    opacity: 1;
+}  
+
+.imgNotario img{
+  width: 100%;
+} 
+@media (min-width:1367px){
+  .subItem {
+    font-size: 11px;
+  }
+
+}
+
+@media (max-width:1366px){
+ *{
+  font-size: 12px;
+ }
+h2, h2 span, h2 span b, h2  b.level, .h2 {
+    font-size: 30px !important;
+}
+
+.contentText {
+  float: right;
+  width: calc(100% - 50px);
+  margin: 0;
+}
+
+  .module1 p, .module2 p, .module3 p {
+      font-size: 33px !important;
+      margin: 0;
+  }
+}
+
+@media (min-height: 1000px) and (max-height: 1040px){
+.paddingMenu {
+    padding: 46px 15px;
+  }
+
+  .brand{
+    padding-top:60px; 
+  }
+
+  .contentText {
+    margin-left: 33px;
+  }
+}
+
+
+  .wrapEditContract{
+    padding: 0;
+  }
+}  
+
+.hoverNotario{
+  display: none;position: absolute;
+}
+.notario:hover .hoverNotario{
+  display: block;
+}
